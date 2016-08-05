@@ -1,10 +1,14 @@
 @font-face {
+  font-family: 'header2';
+  src: url('../font/Mustang.otf'); 
+}
+@font-face {
   font-family: 'header';
-  src: url('../font/Morracle.otf'); 
+  src: url('../font/Ailerons-Typeface.otf'); 
 }
 
 .head-color{
-	background-color: rgba(0,0,0,.3);
+	background-color: rgba(0,0,0,.6);
 	min-height: 100vh;
 }
 .head-bg{
@@ -16,8 +20,20 @@
 }
 .head-text{
 	font-family: 'header';
-	padding: 35% 0 0 0;
+	padding: 30vh 0 0 0;
 }
 .head-text h1{
-	font-size: 8rem !important;
+	font-size: 10vw !important;
+	background: -webkit-linear-gradient(left, #5ec7c0, #b93950);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.head-desc{
+	font-family: 'header2';
+}
+.head-desc h2{
+	font-size: 5vw !important;
+		background: -webkit-linear-gradient(left, #5ec7c0, #b93950);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
