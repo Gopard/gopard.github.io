@@ -45,10 +45,30 @@
 	-webkit-text-fill-color: transparent;
 }
 
-.triangle{
-	background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.2));
+.triangle-first{
+	background: linear-gradient(to top, #5ec7c0, #b93950);
     position: relative;
     overflow:hidden;
+}
+
+.triangle-first:before {
+    content: "";
+    display: block;
+    width: 50vw;
+    height: 0px;
+    border-style: solid;
+    border-width: 10vw  50vw 0 50vw;
+    border-color: #000 transparent transparent transparent;
+    position: absolute;
+}
+
+
+
+.triangle{
+	background: linear-gradient(to top, #5ec7c0, #b93950);
+    position: relative;
+    overflow:hidden;
+	
 }
 
 .triangle:before {
@@ -57,23 +77,14 @@
     width: 50vw;
     height: 0px;
     border-style: solid;
-    border-width: 10vw 50vw 0 0;
-    border-color: #000 transparent transparent transparent;
-    position: absolute;
-}
-.triangle:after {
-    content: "";
-    display: block;
-    width: 50vw;
-    height: 0px;
-    border-style: solid;
-    border-width: 0 50vw  10vw   50vw ;
-    border-color: transparent #000 transparent transparent ;
+    border-width: 10vw  50vw 0 50vw;
+    border-color: #b93950 transparent transparent transparent;
     position: absolute;
 }
 
 .triangle-end{
-	background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.2));
+	background: linear-gradient(to top, #b93950,  #5ec7c0);
+--background-color: #5ec7c0;
     position: relative;
     overflow:hidden;
 }
@@ -85,6 +96,21 @@
     height: 0px;
     border-style: solid;
     border-width: 10vw  50vw 0 50vw;
-    border-color: #000 transparent transparent transparent;
+    border-color: #5ec7c0 transparent transparent transparent;
     position: absolute;
+}
+.skills-logos{
+
+	text-align: center;
+	margin-top: 200px;
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+.skills{
+	margin-top: 20px;
+	width: 50%;
+	max-width: 30vw;
+	height: auto;
+
+	
 }
