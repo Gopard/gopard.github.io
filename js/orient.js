@@ -24,9 +24,9 @@ window.addEventListener('deviceorientation', handleOrientation);
 
 $(document).ready(function() {
   $('.canvas').particles({
-  maxParticles: 100,
-  size: 3,
-  speed: 0.5,
+  maxParticles: 25,
+  size: 10,
+  speed: 1,
   color: '#000000',
   minDist: 140,
   connectParticles: true
