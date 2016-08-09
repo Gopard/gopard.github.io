@@ -22,7 +22,7 @@ function handleOrientation(event) {
 
 window.addEventListener('deviceorientation', handleOrientation);
 
-$(document).ready(function() {
+/*$(document).ready(function() {
   $('.canvas').particles({
   maxParticles: 25,
   size: 10,
@@ -32,4 +32,4 @@ $(document).ready(function() {
   connectParticles: true
 });
 
-});
+}); */
