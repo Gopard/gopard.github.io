@@ -22,11 +22,10 @@ function handleOrientation(event) {
 
 window.addEventListener('deviceorientation', handleOrientation);
 
-document.addEventListener('DOMContentLoaded', function () {
-  particleground(document.getElementById('head-bg'), {
-    dotColor: '#5cbdaa',
-    lineColor: '#5cbdaa'
+$(document).ready(function() {
+  $('#head-bg').particleground({
+    dotColor: '#000',
+    lineColor: '#000'
   });
-  var intro = document.getElementById('intro');
-  intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
-}, false);
+
+});
