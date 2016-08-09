@@ -111,6 +111,9 @@
 	width: 50%;
 	max-width: 30vw;
 	height: auto;
+}
 
-	
+.my-name{
+	display: inline-block;
+
 }

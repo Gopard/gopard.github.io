@@ -2,6 +2,7 @@ var ball   = document.querySelector('.head-text');
 var garden = document.querySelector('.head-desc');
 
 function handleOrientation(event) {
+  var z = event.alfa;
   var x = event.beta;  // In degree in the range [-180,180]
   var y = event.gamma; // In degree in the range [-90,90]
 
@@ -10,18 +11,13 @@ function handleOrientation(event) {
 
   // Because we don't want to have the device upside down
   // We constrain the x value to the range [-90,90]
-  if (x >  90) { x =  90};
-  if (x < -90) { x = -90};
-
-  // To make computation easier we shift the range of 
-  // x and y to [0,180]
-  x += 90;
-  y += 90;
 
   // 10 is half the size of the ball
   // It center the positioning point to the center of the ball
-  ball.style.top  = (x/180 - 10) + "px";
-  ball.style.left = (y/180 - 10) + "px";
+  ball.style.transform = 'rotate3d(1,0,0,'+x+'deg)';
+  ball.style.transform =  ball.style.transform +'rotate3d(0,1,0,'+y+'deg)';
+  ball.style.transform =  ball.style.transform +' rotate3d(0,0,1,'+z+'deg)';
+  //console.log('rotate3d('+x +','+ y+')');
 }
 
 window.addEventListener('deviceorientation', handleOrientation);
