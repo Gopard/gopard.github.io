@@ -1,9 +1,9 @@
-var ball   = document.querySelector('.head-text');
+var ball   = document.querySelector('.rotate');
 var garden = document.querySelector('.head-desc');
 
 function handleOrientation(event) {
   var z = event.alfa;
-  var x = event.beta;  // In degree in the range [-180,180]
+  var x = event.beta/2;  // In degree in the range [-180,180]
   var y = event.gamma; // In degree in the range [-90,90]
 
   //output.innerHTML  = "beta : " + x + "\n";
@@ -17,7 +17,6 @@ function handleOrientation(event) {
   ball.style.transform = 'rotate3d(1,0,0,'+x+'deg)';
   ball.style.transform =  ball.style.transform +'rotate3d(0,1,0,'+y+'deg)';
   ball.style.transform =  ball.style.transform +' rotate3d(0,0,1,'+z+'deg)';
-  garden.style.transform =  ball.style.transform;
   //console.log('rotate3d('+x +','+ y+')');
 }
 
