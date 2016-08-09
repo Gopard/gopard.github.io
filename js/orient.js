@@ -2,9 +2,9 @@ var ball   = document.querySelector('.rotate');
 var garden = document.querySelector('.head-desc');
 
 function handleOrientation(event) {
-  var z = event.alfa;
-  var x = event.beta/2;  // In degree in the range [-180,180]
-  var y = event.gamma; // In degree in the range [-90,90]
+  var z = 0 - event.alfa/2;
+  var x = 0 - event.beta/2;  // In degree in the range [-180,180]
+  var y = 0 - event.gamma/2; // In degree in the range [-90,90]
 
   //output.innerHTML  = "beta : " + x + "\n";
   //output.innerHTML += "gamma: " + y + "\n";
