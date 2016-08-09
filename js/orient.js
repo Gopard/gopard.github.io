@@ -17,6 +17,7 @@ function handleOrientation(event) {
   ball.style.transform = 'rotate3d(1,0,0,'+x+'deg)';
   ball.style.transform =  ball.style.transform +'rotate3d(0,1,0,'+y+'deg)';
   ball.style.transform =  ball.style.transform +' rotate3d(0,0,1,'+z+'deg)';
+  garden.style.transform =  ball.style.transform;
   //console.log('rotate3d('+x +','+ y+')');
 }
 
